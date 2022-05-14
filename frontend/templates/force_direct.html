@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="https://d3js.org/d3.v7.min.js"></script>
+    <style type="text/css">
+    .nodeid {
+        fill: white;
+    }
+    </style>
+    <div>
+     <a class="btn btn--primary h-full-width" onclick="draw()">draw</a>
+    </div>
+
+    <div id="d3example"></div>
+
+<script>
+const width = window.innerWidth
+const height = window.innerHeight
+
+const data = {
+    "nodes":[
+      {"id":"Dog","group":"people"},
+      {"id":"Cat","group":"people"},
+      {"id":"Bird","group":"people"},
+      {"id":"Chicken","group":"people"},
+      {"id":"Park","group":"object"},
+      {"id":"Beach","group":"object"},
+    ],
+    "links":[
+      {"source":'Dog',"target":'Beach',"strength":1},
+      {"source":'Dog',"target":"Park","strength":1},
+      {"source":"Park","target":"Cat","strength":1},
+      {"source":"Park","target":"Chicken","strength":1},
+      {"source":"Beach","target":"Bird","strength":1}
+    ]
+  }
+
+
+function getNodeColor(node) {
+  return node.group === 'people' ? 'red' :
+         node.group === 'object' ? 'blue': 'gray'
+}
+
+function clearBox(elementID)
+{
+    document.getElementById(elementID).innerHTML = "";
+}
+
+
+function draw(){
+  clearBox('d3example')
+
+  const svg = d3.select('#d3example')
+  .append("svg")
+  .attr('width', width)
+  .attr('height', height)
+
+  const simulation = d3.forceSimulation()
+  .force('charge', d3.forceManyBody()) 
+  .force('center', d3.forceCenter(width / 2, height / 2))
+  .force('link', d3.forceLink().id(link => link.id).strength(link => link.strength))
+
+  const nodeElements = svg.append('g')
+  .selectAll('circle')
+  .data(data.nodes)
+  .enter().append('circle')
+    .attr('r', 15)
+    .attr('fill', getNodeColor)
+
+  const textElements = svg.append('g')
+    .selectAll('text')
+    .data(data.nodes)
+    .enter().append('text')
+      .text(node => node.id)
+      .attr('font-size', 15)
+      .attr('class','nodeid')
+      .attr('dx', 15)
+      .attr('dy', 4)
+
+  const linkElements = svg.append('g')
+    .selectAll('line')
+    .data(data.links)
+    .enter().append('line')
+      .attr('stroke-width', 1)
+      .attr('stroke', 'white')
+
+  simulation.nodes(data.nodes).on('tick', () => {
+  nodeElements
+    .attr('cx', node => node.x)
+    .attr('cy', node => node.y)
+  textElements
+    .attr('x', node => node.x)
+    .attr('y', node => node.y)
+  linkElements
+    .attr('x1', link => link.source.x)
+    .attr('y1', link => link.source.y)
+    .attr('x2', link => link.target.x)
+    .attr('y2', link => link.target.y)
+})
+  simulation.force('link').links(data.links)
+  simulation.force('link').distance(60)
+}
+
+
+// d3.json("static/pcap_export.json", drawGraph);
+</script>
+{% endblock%}

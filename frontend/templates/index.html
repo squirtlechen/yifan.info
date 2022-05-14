@@ -1,0 +1,509 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Yi-Fan Chen.</h1>
+
+                    <h3>
+                    I'm a <span>data scientist</span>, <span>product manager</span> creating extraordinary 
+                    solution for companies. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                    and learn more <a class="smoothscroll" href="/#about">about me</a>.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="https://www.facebook.com/yifan.chen.9809/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/sail770907/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/yi-fan-chen-tw/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+    </section> <!-- end s-hero -->
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="{% static 'images/avatars/user-00.jpg' %}" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    <img src="{% static 'images/underconstruction.png' %}" alt="" width="200" height="200">
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
+                        <p>
+                        Yi-Fan Chen <br>
+                        Taipei<br>
+                        Taiwan <br>
+                        <a href="mailto:sail770907@gmail.com">sail770907@gmail.com</a>
+                        </p>
+                        
+                    </div>
+                    <div class="column w-1000-stack">
+                        <a href="#0" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Sinyi Realty Inc.</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Data Team Lead</span> 
+                            <span class="resume-block__header-date">
+                                August 2021 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <img src="{% static 'images/underconstruction.png' %}" alt="" width="200" height="200">
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Cyberbiz</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Data Product Manger</span> 
+                            <span class="resume-block__header-date">
+                                October 2019 - July 2021
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <img src="{% static 'images/underconstruction.png' %}" alt="" width="200" height="200">
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Huawei UK</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Data Coordinator</span> 
+                            <span class="resume-block__header-date">
+                                September 2018 - May 2019
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <img src="{% static 'images/underconstruction.png' %}" alt="" width="200" height="200">
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3"> National Chiao Tung University</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Master in Management of Business and Administration</span> 
+                            <span class="resume-block__header-date">
+                                2012 ~ 2014
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">National Chung Hsing University</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Bachelor's Degree in Mechanical Enigeering</span> 
+                            <span class="resume-block__header-date">
+                                2006 ~ 2010
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <p>
+
+                    </p>
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>Data Visualization By Javascript</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent100"></div>
+                        <strong>Data Visualization By metabase</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>Backend By Django</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent90"></div>
+                        <strong>ETL By airflow</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent75"></div>
+                        <strong>Docker</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent75"></div>
+                        <strong>Google Cloud Service</strong>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Projects</h3>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/droplet.jpg' %}" 
+                         srcset="{% static 'images/portfolio/droplet.jpg' %} 1x, 
+                         {% static 'images/portfolio/droplet@2x.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/lamp.jpg' %}" 
+                         srcset="{% static 'images/portfolio/lamp.jpg' %} 1x, 
+                         {% static 'images/portfolio/lamp@2x.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/minimalismo.jpg' %}" 
+                         srcset="{% static 'images/portfolio/minimalismo.jpg' %} 1x, 
+                         {% static 'images/portfolio/minimalismo@2x.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/shutterbug.jpg' %}" 
+                         srcset="{% static 'images/portfolio/shutterbug.jpg' %} 1x, 
+                         {% static 'images/portfolio/shutterbug@2x.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/fuji.jpg' %}" 
+                         srcset="{% static 'images/portfolio/fuji.jpg' %} 1x, 
+                         {% static 'images/portfolio/fuji.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/skaterboy.jpg' %}" 
+                         srcset="{% static 'images/portfolio/skaterboy.jpg' %} 1x, 
+                         {% static 'images/portfolio/skaterboy.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-07" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/rucksack.jpg ' %}" 
+                         srcset="{% static 'images/portfolio/rucksack.jpg' %} 1x, 
+                         {% static 'images/portfolio/rucksack.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-08" class="folio-item__thumb">
+                    <img src="{% static 'images/portfolio/sanddunes.jpg' %}" 
+                         srcset="{% static 'images/portfolio/sanddunes.jpg' %} 1x, 
+                         {% static 'images/portfolio/sanddunes.jpg' %} 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="{% static 'images/portfolio/gallery/g-droplet.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Sankey Diagram</h5>
+                    <p>Building</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="{% static 'images/portfolio/gallery/g-lamp.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Force Direct Graph</h5>
+                    <p></p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="{% static 'images/portfolio/gallery/g-minimalismo.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Product Pattern</h5>
+                    <p></p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="{% static 'images/portfolio/gallery/g-shutterbug.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Shutterbug</h5>
+                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                    <ul class="modal-popup__cat">
+                        <li>E-Commerce</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <img src="{% static 'images/portfolio/gallery/g-fuji.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Fuji</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="{% static 'images/portfolio/gallery/g-skaterboy.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Skaterboy</h5>
+                    <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-07" hidden>
+            <div class="modal-popup">
+                <img src="{% static 'images/portfolio/gallery/g-rucksack.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Rucksack</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-08" hidden>
+            <div class="modal-popup">
+                <img src="{% static 'images/portfolio/gallery/g-sanddunes.jpg' %}" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Sand Dunes</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+    
+                <a href="#" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+
+    </section> <!-- end s-portfolio -->
+  
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                Have a new idea in mind? Let's collaborate and analysis something awesome. 
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+
+                    <div class="column large-12">
+                        <a href="mailto:sail770907@gmail.com" class="mailtoui btn btn--primary h-full-width">Email Me</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://www.facebook.com/yifan.chen.9809/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/sail770907/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/yi-fan-chen-tw/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Ceevee 2021</span> 
+                <span>Design by <a href="https://www.styleshout.com/" target="_blank">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+{% endblock%}
